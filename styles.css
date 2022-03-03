@@ -1,0 +1,49 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+i{
+    font-size: 30px;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post{
+    background-color: white;
+    width: 500px;
+    height: 600px;
+}
+.post-header{
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+}
+#name{
+    margin-left: 4px;
+    flex-grow: 3;
+}
+#options{
+    margin-right: 8px;
+}
+.post-photo{
+    height: 45%;
+    display: flex;
+    overflow: hidden;
+    object-fit:cover;
+    justify-content: center;
+    flex-direction: column;
+}
+.post-body{
+    display: block;
+    padding: 8px;
+    word-break: break-all;
+}
+i.fa-regular.fa-bookmark{
+    float: right;
+}
+
+div>p{
+    overflow: hidden;
+}
