@@ -1,26 +1,41 @@
-# ![4Geeks Logo](http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=4geeks,16) HTML Hello
+# Instagram feed con Bootstrap
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/html-hello.git)
+Creando una landing page similar a Instagram usando solamente Boostrap.
 
-The most basic boilerplate for any 4Geeks Academy student using the [gitpod.io](gitpod.io) coding editor.
+### Pre-requisitos 📋
 
-[![How to open html/css preview of my project in gitpod](https://github.com/4GeeksAcademy/Templates-Boilerplates/blob/master/assets/hello-html-intro.png?raw=true)](https://youtu.be/dfbDCMu_p-0)
+1. Ordenador o dispositivo movil.
+2. Programa donde copiar el repositorio. (Gitpod, VisualStudioCode, Pycharm ....)
+3. Navegador web donde visualizar el resultado del codigo.
 
-## What to do next?
 
-Create an `index.html` file with the [basic HTML structure](http://content.breatheco.de/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+## Construido con 🛠️
 
-```sh
-$ pip3 install flask && python3 server.py
+* [HTML5] - Base del Front-end
+* [CSS3]
+* [Fontawesome](https://fontawesome.com/) - Iconos utilizados
+
+## Deployment
+
+Para lanzar este proyecto introducir en la consola:
+
+```bash
+  pip3 install flask && python server.py
 ```
 
-- You can create as many HTML files as you want
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+## Estructura y explicación del codigo ⚙️
+
+* Creación de un post similar a Instagram basado en html y css puro sin bootstrap.
+* Se inserta un div unico clase post en el body ya que solo vamos a tener un post. SI fueran mas se crearia un div contenedor padre. 
+* El div post se divide en 3 div de clases: post-header , post-image , post-body.
+* El post-header incluye un icono de HTML5 el titulo del post y un icono final de config. Se utiliza un flex para agruparlos horizontalmente y al titulo del post #name se le otorga un grow 3 para desplazar el icono config al final.
+* En post-image se inserta una foto y se le otorga un cover sobre el contenedor padre.
+* Para el post-body se utiliza un display block. Los iconos se insertan en un div padre post-icons y al ultimo se le hace float a la derecha. Para el texto insertado en los <p> se utiliza 'word-break: break-all' en el div padre para justificar el texto al tamaño del contenedor.
+
+
+## Autor ✒️
+
+* **Jose Luis Gil** - *Ejercicio completo* - [JoseLike](https://github.com/JoseLike)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/JoseLike/excuse-generator/contributors) quíenes han participado en este proyecto. 
